@@ -18,12 +18,16 @@ Password:   M@rk1234<br><br>
 Homepage/Login page- https://versatile.pythonanywhere.com/<br>
 Signup Page- https://versatile.pythonanywhere.com/signup/<br><br>
 
-Have used Django inbuilt form for creating login/signup page.<br> 
-Have done  proper validations, Authentication and Authorization.<br>
-Without logging dashboard can't be visited by anonymous user.<br>
-Once the user login he/she will be redirected to dashboard.<br>
-If user is authenticated he cant revisit login page until he/she logout. <br>
-Uploading profile picture is not required. so have given a default image for the given users.<br>
+It conist of 3 pages- <br>
+Login, Signup and Dashboard.<br>
+Dashboard is like the user profile page, which shows user data on the page. <br><br>
+
+1) Have used Django inbuilt form for creating login/signup page.<br> 
+2) Have done  proper validations, Authentication and Authorization.<br>
+3) Without logging dashboard can't be visited by anonymous user.<br>
+4) Once the user login he/she will be redirected to dashboard.<br>
+5) If user is authenticated he cant revisit login page until he/she logout. <br>
+6) Uploading profile picture is not required. so have provided a default image for the given users.<br>
 
 
 
