@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'task.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('DJANGO_ENGINE'),
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': config('DJANGO_NAME'),
         'USER': config('DJANGO_USER'),
         'PASSWORD': config('DJANGO_PASSWORD'),
@@ -137,3 +137,4 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_URL = 'login'
+STATIC_ROOT = BASE_DIR / 'taskfiles'/'static'

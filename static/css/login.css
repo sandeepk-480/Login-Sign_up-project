@@ -82,8 +82,11 @@ label{
     color: red;
 }
 .success{
+    display: flex;
     background-color: rgb(231, 226, 226);
     color: green;
+    font-size: 18px;
+    justify-content: center;
     margin-bottom: 20px;
     padding: 8px;
 }
