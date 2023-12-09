@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/signup.css" %}">
+</head>
+<body>
+    <div class="header">Sign up</div>
+    <div class="message-js">
+        {% if messages %}
+            {% for message in messages %}
+                <span class="{{message.tags}}">{{message}}</span>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="flex">
+        <div class="signup_form">
+            
+            <form action="{% url "signup" %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="form-css">
+                    <div class="errors">
+                        {% if form.non_field_errors %}
+                            {% for error in form.non_field_errors %}
+                                {{error}}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    
+                    {% for fm in form %}
+                        {{fm.label_tag}} {{fm}} <span class="errors">{{fm.errors|striptags}}</span>
+                    {% endfor %}
+                </div>
+                
+
+                <div class="check">
+                    <input type="checkbox" class="show_pass" onclick="togglePassword_signup()"> <span class="showpass">Show password</span>
+                </div>
+
+                <div class="btn">
+                    <input class="signupcss" type="submit" value="Sign_up">
+                    <a role="button" class="login-css" href="{% url "login" %}">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static "js/script.js" %}"></script>
+
+</body>
+</html>
+
+{% comment %} rQR|$'g+867$ {% endcomment %}

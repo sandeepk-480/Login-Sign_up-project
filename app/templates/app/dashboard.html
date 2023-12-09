@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/dashboard.css" %}">
+</head>
+<body>   
+    <div class="header">Dashboard</div>
+
+    <div class="message-js">
+        {% if messages %}
+            {% for message in messages %}
+                <span class="{{message.tags}}">{{message}}</span>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="flex">
+        <div class="dashboard">
+            {% if profile_picture %}
+                <img src="{{profile_picture.url}}" alt="profile_pic">
+            {% else %}
+                <img src="/media/profile_pic/login_img.jpg" alt="">
+            {% endif %}
+
+            <p><u>Username</u>: &nbsp;&nbsp;{{username}}</p>
+            <p><u>First Name</u>: &nbsp;&nbsp;{{first_name}}</p>
+            <p><u>Last Name</u>: &nbsp;&nbsp;{{last_name}}</p>
+            <p><u>Email</u>: &nbsp;{{email}}</p>
+
+            <a class="btn" href="{% url "logout" %}">Logout</a>
+        </div>
+    </div>
+
+    <script src="{% static "js/script.js" %}"></script>
+</body>
+</html>

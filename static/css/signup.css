@@ -1,0 +1,103 @@
+body{
+    background-color: whitesmoke;
+}
+.header{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.signup_form{
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+    padding: 40px 50px;
+    padding-right: 70px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+label{
+    font-size: 22px;
+    margin-bottom: 9px;
+    display: block;
+    margin-top: 5px;
+}
+.form-css input{
+    height: 26px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 4px 12px;
+    font-size: 18px
+}
+#id_profile_picture{
+    border: none;
+}
+.showpass{
+    font-size: 20px;
+}
+.show_pass{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#id_Address_line_1{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.signupcss{
+    padding: 7px 18px;
+    font-size: 20px;
+    background-color: rgb(231, 226, 226);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signupcss:hover, .login-css:hover{
+    background-color: rgb(175, 172, 172)
+}
+.login-css{
+    background-color: rgb(231, 226, 226);
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 26px;
+    font-size: 20px;
+    border: none;
+}
+.signupcss{
+    padding: 7px 18px;
+    font-size: 20px;
+    background-color: rgb(231, 226, 226);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.errors{
+    color: red;
+}
+.success{
+    background-color: rgb(213, 253, 152);
+    color: green;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+textarea{
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 3px 10px;
+}
