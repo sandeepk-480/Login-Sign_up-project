@@ -1,95 +1,3 @@
-/* login
-body{
-    background-color: whitesmoke;
-}
-
-.header{
-    margin-top: 80px;
-    margin-bottom: 20px;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-}
-.flex{
-    display: flex;
-    justify-content: center;
-
-}
-.login_form{
-    display: inline-flex;
-    justify-content: center;
-    border: none;
-    padding: 40px;
-    padding-right: 70px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 2px 10px rgba(0,0, 0, 0.3);
-}
-#id_username, #id_password{
-    width: 100%;
-    max-width: 400px;
-    height: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    font-size: 20px;
-    padding: 4px 12px;
-
-}
-label{
-    font-size: 25px;
-    display: block;
-    margin-bottom: 9px;
-    margin-top: 5px;
-}
-
-.signup-css{
-    background-color: rgb(231, 226, 226);
-    border-radius: 8px;
-    color: black;
-    text-decoration: none;
-    margin-left: 20px;
-     padding: 12px 22px;
-    font-size: 20px;
-    border: none;
-}
-.signup-css:hover, .login-css:hover{
-    background-color: rgb(175, 172, 172);
-}
-.login-css{
-    padding: 10px 27px;
-    font-size: 20px;
-    background-color: rgb(231, 226, 226);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.showpass{
-    font-size: 20px;
-}
-.show_pass{
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-}
-.btn{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-}
-.errors{
-    color: red;
-}
-.success{
-    display: flex;
-    background-color: rgb(231, 226, 226);
-    color: green;
-    font-size: 18px;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 8px;
-} */
-
 /* --------------------------------------------------- */
 
 /* login */
@@ -167,6 +75,10 @@ label{
 }
 .errors{
     color: red;
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
+    display: block;
 }
 .success{
     display: flex;

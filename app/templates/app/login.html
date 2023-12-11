@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -17,18 +16,19 @@
             {% endfor %}
         {% endif %}
     </div>
+    <div class="errors">
+        {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+                {{error}}
+            {% endfor %}
+        {% endif %}
+    </div>
 
     <div class="flex">
         <div class="login_form">
             <form action="{% url "login" %}" method="POST">
                 {% csrf_token %}
-                <div class="errors">
-                    {% if form.non_field_errors %}
-                        {% for error in form.non_field_errors %}
-                            {{error}}
-                        {% endfor %}
-                    {% endif %}
-                </div>
+                
 
                 {% for fm in form %}
                     {{fm.label_tag}} {{fm}} <span class="errors">{{fm.errors|striptags}}</span>

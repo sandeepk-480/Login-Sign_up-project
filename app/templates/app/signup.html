@@ -17,6 +17,14 @@
         {% endif %}
     </div>
 
+    <div class="errors">
+        {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+                {{error}}
+            {% endfor %}
+        {% endif %}
+    </div>
+
     <div class="flex">
         <div class="signup_form">
             
@@ -24,13 +32,6 @@
                 {% csrf_token %}
 
                 <div class="form-css">
-                    <div class="errors">
-                        {% if form.non_field_errors %}
-                            {% for error in form.non_field_errors %}
-                                {{error}}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
                     
                     {% for fm in form %}
                         {{fm.label_tag}} {{fm}} <span class="errors">{{fm.errors|striptags}}</span>
@@ -54,5 +55,3 @@
 
 </body>
 </html>
-
-{% comment %} rQR|$'g+867$ {% endcomment %}
