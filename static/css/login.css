@@ -1,4 +1,4 @@
-/* login */
+/* login
 body{
     background-color: whitesmoke;
 }
@@ -60,7 +60,6 @@ label{
     padding: 10px 27px;
     font-size: 20px;
     background-color: rgb(231, 226, 226);
-    /* background-color: rgb(86, 255, 255); */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -89,4 +88,105 @@ label{
     justify-content: center;
     margin-bottom: 20px;
     padding: 8px;
+} */
+
+/* --------------------------------------------------- */
+
+/* login */
+body{
+    background-color: whitesmoke;
+}
+
+.header{
+    margin-top: 1em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+.login_form{
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+    padding: 3em;
+    padding-right: 4em;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0,0, 0, 0.3);
+    max-width: 20em;
+}
+#id_username, #id_password{
+    width: 100%;
+    height: 1.4em;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding: 0.2em;
+
+}
+label{
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    flex-basis: 0;
+}
+
+.signup-css, .login-css{
+    background-color: rgb(231, 226, 226);
+    border-radius: 0.3em;
+    color: black;
+    text-decoration: none;
+    margin-left: 1em;
+    padding: 0.5em 0.8em;
+    font-size: 1.3em;
+    border: none;
+    text-align: center;
+    margin-top: 0.3em;
+}
+.signup-css:hover, .login-css:hover{
+    background-color: rgb(175, 172, 172);
+}
+.showpass{
+    font-size: 1.2em;
+}
+.show_pass{
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.2em;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5em;
+}
+.errors{
+    color: red;
+}
+.success{
+    display: flex;
+    background-color: rgb(231, 226, 226);
+    color: green;
+    font-size: 1em;
+    justify-content: center;
+    margin-bottom: 1.2em;
+    padding: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn{
+        flex-direction: column;
+        margin-top: 3em;
+    }
+    .header{
+        margin-top: 0.3em;
+    }
+    .flex{
+        padding-top: 0.4em;
+    }
 }

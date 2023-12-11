@@ -1,5 +1,6 @@
-body{
+/* body{
     background-color: whitesmoke;
+    font-size: 16px;
 }
 .header{
     margin-top: 10px;
@@ -79,14 +80,6 @@ label{
     font-size: 20px;
     border: none;
 }
-.signupcss{
-    padding: 7px 18px;
-    font-size: 20px;
-    background-color: rgb(231, 226, 226);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
 .errors{
     color: red;
 }
@@ -103,4 +96,107 @@ textarea{
     border-radius: 10px;
     border: 1px solid;
     padding: 3px 10px;
+} */
+
+
+/* ----------------------------------------------------*/
+
+body{
+    background-color: whitesmoke;
+    font-size: 1em;
+}
+.header{
+    margin-top: 0.5em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+.signup_form{
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+    padding: 3em;
+    padding-right: 4.5em;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0px 0.2em 0.5em rgba(0, 0, 0, 0.3);
+    max-width: 60vh;
+    flex: 1;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+label{
+    font-size: 1.4em;
+    margin-bottom: 9px;
+    margin-top: 5px;
+}
+.form-css input{
+    height: 1.5em;
+    width: 100%;
+    margin-bottom: 1.2em;
+    border-radius: 0.7em;
+    border: 1px solid black;
+    padding: 0.3em;
+    font-size: 1.1em;   
+}
+#id_profile_picture{
+    border: none;
+}
+.showpass{
+    font-size: 1.2em;
+}
+.show_pass{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.signupcss:hover, .login-css:hover{
+    background-color: rgb(175, 172, 172)
+}
+.login-css, .signupcss{
+    background-color: rgb(231, 226, 226);
+    border-radius: 0.4em;
+    color: black;
+    text-decoration: none;
+    margin-left: 1.1em;
+    padding: 0.7em 1em;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0.3em;
+    border: none;
+}
+.errors{
+    color: red;
+}
+.success{
+    display: flex;
+    background-color: rgb(231, 226, 226);
+    color: green;
+    font-size: 1em;
+    justify-content: center;
+    margin-bottom: 1.1em;
+    padding: 0.4em;
+}
+@media only screen and (max-width: 600px) {
+    .btn{
+        flex-direction: column;
+    }
+    .header{
+        margin-top: 0;
+    }
+    .flex{
+        padding-top: 0.5em;
+    }
+    .signup_form{
+        padding-top: 1.5em;
+        padding-bottom: 1.5em
+    }
 }
