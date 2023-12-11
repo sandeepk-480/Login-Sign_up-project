@@ -9,7 +9,7 @@ Link- https://versatile.pythonanywhere.com/<br><br>
 It has 2 Login's already Created-<br>
 Patient Login-<br>
 username:  Henry<br>
-Password:   Henry@1234<br>v
+Password:   Henry@1234<br>
 
 Doctor Login-<br>
 username:   Mark<br>
@@ -24,10 +24,10 @@ Dashboard is like the user profile page, which shows user data on the page. <br>
 
 1) Have used Django inbuilt form for creating login/signup page.<br> 
 2) Have done  proper validations, Authentication and Authorization.<br>
-3) Without logging dashboard can't be visited by anonymous user.<br>
-4) Once the user login he/she will be redirected to dashboard.<br>
-5) If user is authenticated he cant revisit login page until he/she logout. <br>
-6) Uploading profile picture is not required. so have provided a default image for the given users.<br>
+3) Without logging, dashboard can't be visited by anonymous user.<br>
+4) Once the user login, he/she will be redirected to dashboard.<br>
+5) If user is authenticated, he cant revisit login page until he/she logout. <br>
+6) Uploading profile picture is not required, so have provided a default image for the given users.<br>
 
 
 
